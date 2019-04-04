@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
-import {ActionUnion, IncrementChicagoBulls} from './scoreboard.actions';
-import { ScoreState, initialState } from './scoreboard.reducer';
+import { IncrementChicagoBulls} from './scoreboard.actions';
+import { ScoreState } from './scoreboard.reducer';
 
 @Component({
   selector: 'ngrx-scoreboard',
