@@ -1,0 +1,31 @@
+<br><br><br><br>
+
+<table class="table table-hover table-striped">
+  <thead>
+  <tr>
+    <th>Team: </th>
+    <th>Score: </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Chicago Bulls </td>
+    <td>{{(score$ | async).chicagoBulls}}</td>
+  </tr>
+  <tr>
+    <td>Los Angeles Lakers </td>
+    <td>{{(score$ | async).losAngelesLakers}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-danger" (click)="incrementChicagoBulls()">Chicago Bulls</button>&nbsp;
+      <button type="button" class="btn btn-success">Los Angeles Lakers</button>
+      <br><br>
+      <button type="button" class="btn btn-dark">Reset</button>
+    </div>
+  </div>
+</div>

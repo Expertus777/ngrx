@@ -1,23 +1,41 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="https://ngrx.io/assets/images/badge.svg">
+<div class="container-fluid main">
+  <div class="row no-gutters">
+    <div class="col">
+      <div style="text-align:center">
+        <h1>
+          Welcome to {{ title }}!
+        </h1>
+        <img width="300" alt="Angular Logo" src="https://ngrx.io/assets/images/badge.svg">
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <ngrx-my-counter></ngrx-my-counter>
+          </div>
+        </div>
+      </div>
+      <ngrx-scoreboard></ngrx-scoreboard>
+
+      <br><br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2>Here are some links to help you start: </h2>
+            <ul>
+              <li>
+                <a target="_blank" rel="noopener" href="https://blog.angular.io/">NgRx Main Page</a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="https://ngrx.io/docs">NgRx docs</a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="https://ngrx.io/guide/store">NgRx Store Guide</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
-<ngrx-my-counter></ngrx-my-counter>
-
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">NgRx Main Page</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://ngrx.io/docs">NgRx docs</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://ngrx.io/guide/store">NgRx Store Guide</a></h2>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>

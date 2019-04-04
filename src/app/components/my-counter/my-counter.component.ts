@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs/index';
+import { Observable } from 'rxjs';
 import { Store, select} from '@ngrx/store';
 import { Increment, Decrement, Reset } from '../../counter.action';
 
