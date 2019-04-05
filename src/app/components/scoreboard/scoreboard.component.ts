@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
-import { IncrementChicagoBulls} from './scoreboard.actions';
+import { IncrementChicagoBulls,
+         IncrementLosAngelesLakers,
+         Reset } from './scoreboard.actions';
 import { ScoreState } from './scoreboard.reducer';
 
 @Component({
@@ -21,5 +23,13 @@ export class ScoreboardComponent implements OnInit {
 
   public incrementChicagoBulls(): void {
     this.store.dispatch(new IncrementChicagoBulls());
+  }
+
+  public incrementLosAngelesLakers(): void {
+    this.store.dispatch(new IncrementLosAngelesLakers());
+  }
+
+  public reset(): void {
+    this.store.dispatch(new Reset({chicagoBulls: 1, losAngelesLakers: 1}));
   }
 }
